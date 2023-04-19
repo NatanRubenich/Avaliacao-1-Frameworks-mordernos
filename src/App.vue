@@ -8,9 +8,9 @@ V-BIND, V-ON, V-MODEL, V-SHOW;
 
 Aluno: Natan Rübenich
 Professor: Ivan Pires
-Disciplina: 
+Disciplina: FRAMEWORKS MODERNOS PARA DESENVOLVIMENTO DE SISTEMAS
 
-O que fiz: Uma aplicação simples e bonita, que adiciona em uma lista para 
+O que fiz: Uma aplicação simples e bonita, que adiciona em uma lista de alguma coisa 
 -->
 
 <template>
