@@ -28,9 +28,9 @@ O que fiz: Uma aplicação simples e bonita, que adiciona em uma lista de alguma
     <input v-model="imputar_valor" @keyup.enter="adicionar_item" />
     <button @click="adicionar_item" :disabled="imputar_valor === ''">Adicionar algo</button>
     <div v-bind:class="{ 'destaque': destacado }">
-      <!-- V-SHOW para renderização condicional de um elemento com display: none -->
+      <!-- V-SHOW para renderização condicional de um elemento com display: none aí -->
       <p v-show="mostrar_texto">{{ texto }}</p>
-      <!-- V-ON para vincular um evento a um método -->
+      <!-- V-ON para vincular um evento a um método aí -->
       <button v-on:click="destacar">Destacar texto</button>
     </div>
   </div>
@@ -43,7 +43,7 @@ export default {
     return {
       titulo: "Minha lista de alguma coisa",
       mensagem: "O botão foi clicado :D",
-      mostrar_mensagem: false,
+      mostrar_mensagem: false, // se True, aparece a mensagem aí
       imputar_valor: "",
       items: [],
       texto: "Ao clicar, vai destacar o texto :D",
@@ -51,6 +51,7 @@ export default {
       destacado: false
     };
   },
+  // metodos ai
   methods: {
     adicionar_item() {
       if (this.imputar_valor !== "") {
